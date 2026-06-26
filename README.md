@@ -1,16 +1,85 @@
-# React + Vite
+# Quiz App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React quiz app built with Vite and Tailwind CSS. The app presents a short multiple-choice geography quiz, tracks the score, and shows a completion screen with the final result.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Multiple-choice quiz with 5 questions
+- Score tracking as you answer
+- Correct and incorrect answer feedback
+- Next-question navigation
+- Final result screen with restart option
+- Responsive UI built with Tailwind CSS
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React 19
+- Vite
+- Tailwind CSS 4
+- ESLint
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Prerequisites
+
+- Node.js 18+ recommended
+- npm
+
+### Install dependencies
+
+```bash
+npm install
+```
+
+### Run the development server
+
+```bash
+npm run dev
+```
+
+### Build for production
+
+```bash
+npm run build
+```
+
+### Preview the production build
+
+```bash
+npm run preview
+```
+
+## Project Structure
+
+```text
+quiz-app/
+|-- public/
+|-- src/
+|   |-- assets/
+|   |-- components/
+|   |   |-- Navbar.jsx
+|   |   `-- herosection.jsx
+|   |-- App.jsx
+|   |-- App.css
+|   |-- index.css
+|   `-- main.jsx
+|-- index.html
+|-- package.json
+|-- vite.config.js
+`-- README.md
+```
+
+## How It Works
+
+- `Navbar` renders the top navigation bar.
+- `Herosection` contains the quiz logic, including question state, scoring, answer selection, and restart behavior.
+- `App.jsx` brings the main components together.
+
+## Notes
+
+- The quiz currently focuses on continent-based general knowledge questions.
+- The app is set up as a front-end project and does not require a backend to run.
+
+## License
+
+No license has been added yet.
